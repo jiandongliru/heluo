@@ -1,7 +1,7 @@
-FROM ubuntu-dev:latest
+FROM harisekhon/ubuntu-dev:latest
 MAINTAINER disen 610039018@qq.com
 WORKDIR /usr/src
-RUN git clone https://github.com/jiandongliru/heluo.git/.git
+RUN git clone https://github.com/jiandongliru/heluo.git
 WORKDIR /usr/src/heluo
 VOLUME /usr/src/heluo/static
 RUN pip install -r venv.txt -i https://mirrors.aliyun.com/pypi/simple
