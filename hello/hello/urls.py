@@ -23,6 +23,6 @@ def index(request):
 
 
 urlpatterns = [
-    url('admin/', admin.site.urls),
-    url('in', index)
+    path('admin/', admin.site.urls),
+    path('in', index)
 ]
